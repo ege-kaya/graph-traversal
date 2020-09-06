@@ -1,11 +1,6 @@
-# Cmpe 250 Assignment 4
-
-* **Deadline:** 03.12.2019 Tuesday @23:00, very strict.
-* For your questions on the project, please contact with your student teaching assistant Kayacan Vesek via [kayacanvesek@gmail.com](mailto:kayacanvesek@gmail.com).
-
 ## Description
 
-Five CmpE students would like to go to the Ancient Anti-Taurus Montains Range, and they are trying to reach the Kizilkaya summit. You are asked to help them with their journey.
+Five CmpE students would like to go to the Ancient Anti-Taurus Montains Range, and they are trying to reach the Kizilkaya summit.
 
 In Anti-Taurus Mountains, there are N registered nodes (i.e., reference points to find the way in the mountains) and M undirected two-way edges.
 
@@ -31,12 +26,6 @@ All five students need your help to find the path they should follow. Your task 
 - The fourth student wants to know the time to reach the summit if (s)he uses the greedy algorithm mentioned above. If (s)he cannot reach the summit, you should print the value "-1".
 - The fifth student wants to know the shortest time to reach the summit. At start, (s)he does not have any power, so (s)he needs to pass two edges to recharge it. 
 
-To implement this project, you will be provided some code written by the assistants, which handles the reading input and output files.
-
-The files you will be provided are HelpStudents.h, HelpStudents.cpp, and main.cpp.
-
-The file you should fill is: HelpStudents.cpp. You are also allowed to change the content of HelpStudents.h. Therefore, any code written outside HelpStudents.cpp and HelpStudents.h will be useless for this project.
-
 ## Input
 
 In the first row of the input, there are 4 numbers. ```(T N M K)``` 
@@ -54,140 +43,10 @@ Next M lines have 3 numbers per row. ```(A_i B_i W_i)```
 Contains a single number, an answer according to the student's goal stated in the description.
 
 
-## Constraits
+## Constraints
 
 N (number of nodes) <= 100000
 
 M (number of edges) <= 100000
 
-W_i <= 1000000 (**Note that some answers may exceed integer range. You must use ```long long int``` type for the answers.** )
-
-## Grading
-Each student type (from one to five) will consult you in 20% of the test cases, so you will get 20 points for the correct implementation of each student type.
-
-In other words, if you find correct answers for three students (with correct implementation) and find incorrect answers for other two, then you will get 60 (20x3 + 0x2) points in this project.
-
-## Sample Input 1
-
-```
-1 6 9 5
-1 2 5
-1 3 1
-3 2 10
-1 5 25
-2 4 6
-4 5 3
-3 6 5
-2 6 7
-5 6 10
-```
-
-## Sample Output 1
-
-```
-14
-```
-
-## Sample Input 2
-
-```
-2 6 9 5
-1 2 5
-1 3 1
-3 2 10
-1 5 25
-2 4 6
-4 5 3
-3 6 5
-2 6 7
-5 6 10
-```
-
-## Sample Output 2
-
-```
-6
-```
-
-## Sample Input 3
-
-```
-3 6 9 5
-1 2 5
-1 3 1
-3 2 10
-1 5 25
-2 4 6
-4 5 3
-3 6 5
-2 6 7
-5 6 10
-```
-
-## Sample Output 3
-
-```
-1
-```
-
-## Sample Input 4
-
-```
-4 6 9 5
-1 2 5
-1 3 1
-3 2 10
-1 5 25
-2 4 6
-4 5 3
-3 6 5
-2 6 7
-5 6 10
-```
-
-## Sample Output 4
-
-```
-43
-```
-
-## Sample Input 5
-
-```
-5 6 9 5
-1 2 5
-1 3 1
-3 2 10
-1 5 25
-2 4 6
-4 5 3
-3 6 5
-2 6 7
-5 6 10
-```
-
-## Sample Output 5
-
-```
-2
-```
-
-
-## Important notes
-
-* Your code will be compiled with `cmake CMakeLists.txt && make` command. You are expected to make sure that your code runs in the provided virtual machine environment.
-* Your code is expected to produce the correct output in **two seconds**. Any test case that lasts more than two seconds will be counted as wrong.
-* If you get the "Segmentation fault" error due to recursive calls, you can try to increase stack size by using ```ulimit -s 100005``` command.
-* Examples we provide will not be used in grading your projects!
-
-
-## Submission Policy
-You are supposed to use the Git system provided to you for all projects. No other means of submission will be accepted. Also, pay attention to the following points:
-
-* All source codes are checked automatically for similarity with other submissions and exercises from previous years. Make sure you write and submit your own code. Plagiarism and any other forms of cheating will have serious consequences, including getting “-100” as the project score and failing the course.
-* Make sure you document your code with simple inline comments and use meaningful variable names. Do not over-comment, or make your variable names unnecessarily long.
-* If you want to make any changes to your project, you should do it before the submission system closes. Your changes will not be accepted by e-mail. Connectivity problems to the Internet or to GitHub in the last few minutes are not valid excuses for being unable to submit. You should not risk leaving your submission to the last few minutes. After uploading to GitHub, check to make sure that your project appears there.
-* We will test your code with different input combinations, so we recommend you to test your code with different input combinations (written by you) as well.
-* Deadline is 3 December 2019, 23:00. 
-
-**Good luck!**
+W_i <= 1000000
